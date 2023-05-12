@@ -209,6 +209,10 @@ svg {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   height: 581px;
   width: 528px;
   position: absolute;
@@ -235,6 +239,38 @@ svg {
 .modal-close:focus {
   background-color: var(--color-active);
   color: #ffffff;
+}
+
+.modal-content h2 {
+  color: var(--text-color-title);
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: var(--letter-spacing);
+  line-height: 1.15;
+  text-align: center;
+}
+
+.modal-content p {
+  color: var(--text-color-body);
+  font-size: 12px;
+  letter-spacing: 0.01em;
+  line-height: 1.17;
+}
+
+.modal-content .write-box,
+.modal-content .comment-box {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 448px;
+}
+
+.modal-content .write-box {
+  height: 40px;
+}
+
+.modal-content .comment-box {
+  height: 120px;
 }
 
 /* Global Header */
