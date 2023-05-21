@@ -351,3 +351,51 @@ svg {
   text-transform: uppercase;
   margin-top: 15px;
 }
+
+.footer-subscribe p {
+  font-size: var(--font-size-sm);
+  line-height: 1.14;
+  letter-spacing: var(--letter-spacing);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.footer-subscribe .input {
+  margin-top: 20px;
+  padding: 15px 16px;
+  background-color: transparent;
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+.footer-subscribe .btn {
+  width: 200px;
+  height: 50px;
+  background-color: var(--color-active);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  color: #ffffff;
+  font-weight: 700;
+  line-height: 50px;
+  vertical-align: middle;
+  margin-left: 12px;
+}
+
+.footer-subscribe .btn:hover,
+.footer-subscribe .btn:active {
+  background-color: #188ce8;
+  cursor: pointer;
+}
+
+.footer-subscribe svg {
+  color: #ffffff;
+  width: 24px;
+  height: 24px;
+  margin-left: 25px;
+  line-height: 50px;
+  vertical-align: middle;
+}
