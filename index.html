@@ -404,52 +404,46 @@
           <h2>Regular Customers</h2>
           <ul>
             <li>
-              <a class="icon" href=""
-                ><svg>
-                  <use
-                    href="images/symbol-defs.svg#icon-customer-logo-1"
-                  ></use></svg
-              ></a>
+              <a class="icon" href="">
+                <svg>
+                  <use href="images/symbol-defs.svg#icon-customer-logo-1"></use>
+                </svg>
+              </a>
             </li>
             <li>
-              <a class="icon" href=""
-                ><svg>
-                  <use
-                    href="images/symbol-defs.svg#icon-customer-logo-2"
-                  ></use></svg
-              ></a>
+              <a class="icon" href="">
+                <svg>
+                  <use href="images/symbol-defs.svg#icon-customer-logo-2"></use>
+                </svg>
+              </a>
             </li>
             <li>
-              <a class="icon" href=""
-                ><svg>
-                  <use
-                    href="images/symbol-defs.svg#icon-customer-logo-3"
-                  ></use></svg
-              ></a>
+              <a class="icon" href="">
+                <svg>
+                  <use href="images/symbol-defs.svg#icon-customer-logo-3"></use>
+                </svg>
+              </a>
             </li>
             <li>
-              <a class="icon" href=""
-                ><svg>
-                  <use
-                    href="images/symbol-defs.svg#icon-customer-logo-4"
-                  ></use></svg
-              ></a>
+              <a class="icon" href="">
+                <svg>
+                  <use href="images/symbol-defs.svg#icon-customer-logo-4"></use>
+                </svg>
+              </a>
             </li>
             <li>
-              <a class="icon" href=""
-                ><svg>
-                  <use
-                    href="images/symbol-defs.svg#icon-customer-logo-5"
-                  ></use></svg
-              ></a>
+              <a class="icon" href="">
+                <svg>
+                  <use href="images/symbol-defs.svg#icon-customer-logo-5"></use>
+                </svg>
+              </a>
             </li>
             <li>
-              <a class="icon" href=""
-                ><svg>
-                  <use
-                    href="images/symbol-defs.svg#icon-customer-logo-6"
-                  ></use></svg
-              ></a>
+              <a class="icon" href="">
+                <svg>
+                  <use href="images/symbol-defs.svg#icon-customer-logo-6"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
@@ -537,44 +531,84 @@
     </footer>
 
     <!-- Modal window -->
-    <div data-modal class="modal is-hidden container">
+    <div data-modal class="modal is-hidden">
       <div class="modal-content">
         <button type="button" data-modal-close class="modal-close">
           &times;
         </button>
+
         <h2>Leave your information and we'll call you back</h2>
-        <div>
-          <p>Name</p>
-          <div class="write-box">
-            <svg>
+
+        <form class="form" name="book-a-service" autocomplete="off">
+          <div class="form-row">
+            <label class="form-group">
+              <p class="label-text">Name</p>
+              <input
+                class="input input-text"
+                type="text"
+                name="username"
+                required
+              />
+            </label>
+          </div>
+
+          <div class="form-row">
+            <label class="form-group">
+              <p class="label-text">Telephone</p>
+              <input
+                class="input input-telephone"
+                type="tel"
+                name="telephone"
+                required
+              />
+            </label>
+          </div>
+
+          <div class="form-row">
+            <label class="form-group">
+              <p class="label-text">Email</p>
+              <input
+                class="input input-email"
+                type="email"
+                name="email"
+                required
+              />
+            </label>
+          </div>
+
+          <div class="form-row">
+            <label class="form-group">
+              <p class="label-text">Comments</p>
+              <textarea
+                placeholder="Enter the text"
+                class="input input-comments"
+                name="message"
+                rows="3"
+              ></textarea>
+            </label>
+          </div>
+
+          <div class="form-row form-terms">
+            <label class="form-group form-terms">
+              <input type="checkbox" name="terms" value="text" required />
+              <span>
+                I agree with the letter and accept the
+                <a href="">Terms and Conditions</a></span
+              >
+            </label>
+          </div>
+        </form>
+
+        <button type="submit" class="form-send-btn">Send</button>
+
+        <!--               <svg>
+                <use href="images/symbol-defs.svg#icon-form-mail"></use>
+              </svg>
+              <svg>
               <use href="images/symbol-defs.svg#icon-form-person"></use>
             </svg>
-          </div>
-        </div>
-        <div>
-          <p>Telephone</p>
-          <div class="write-box">
             <svg><use href="images/symbol-defs.svg#icon-form-phone"></use></svg>
-          </div>
-        </div>
-        <div>
-          <p>E-mail</p>
-          <div class="write-box">
-            <svg><use href="images/symbol-defs.svg#icon-form-mail"></use></svg>
-          </div>
-        </div>
-        <div>
-          <p>Comments</p>
-          <div class="comment-box"></div>
-        </div>
-        <div>
-          <div class="tick-box"></div>
-          <p>
-            I agree with the letter and accept the
-            <span>Terms and Conditions</span>
-          </p>
-        </div>
-        <button type="button" class="btn form-send-btn">Send</button>
+         -->
       </div>
     </div>
 
